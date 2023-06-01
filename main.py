@@ -33,9 +33,9 @@ def toggle_dark_mode():
         dark_mode_button['image'] = dark
         dark_mode_button['bg'] = '#1d1d1d'
 
-def get_saudacao():
-    nome_usuario = os.getlogin()
-    saudacao.config(text='Olá, '  + nome_usuario)
+# def get_saudacao():
+#     nome_usuario = os.getlogin()
+#     saudacao.config(text='Olá, '  + nome_usuario)
 def get_data():
     locale.setlocale(locale.LC_ALL, 'pt_BR.utf-8')
     data_atual = strftime('%A, %d %B %Y')
@@ -65,7 +65,7 @@ horario = Label(root, bg='#1d1d1d', fg='#c8a2c8', font=('Montserrat', 64, 'bold'
 horario.pack(pady=2)
 
 # ONDE CHAMA A FUNÇÃO PRA APARECER NA TELA
-get_saudacao()
+# get_saudacao()
 get_data()
 get_horario()
 root.mainloop()
